@@ -16,6 +16,21 @@ Diploma project - creating a report based on the data obtained from the server.
     - отправление сформированной таблицы на почту. Почту указываем в поле под button           "Отправить Отчет".
 // ======================================================================================= //
 
+Structure:
+  1st component - header: a choice from the list of the database to which, after confirmation, the program will send an API request and will receive information back.
+
+  The 2nd component - left sidebar with list: from the received JSON object in the left sidebar the keys will be loaded, which will appear as a list of fields, and in turn we can change them.
+  All elements of the list (JSON objects) can be activated and deactivated, from which the fullness of the table (report) will depend.
+  Before the whole list will be additional. checkbutton, which will activate / deactivate all sidebar elements.
+  The conclusion of the 2nd component will be a button, which, based on the selected sidebar elements, will form a preview of our report in the 3rd component.
+
+  The 3rd component is a preview table. It is formed after pressing the button "Generate Table".
+
+  The 4th component is under the sidebar. Its main function is the button, which activates:
+    - saving the generated table to a disk with the name that will be generated from the system date;
+    - sending the generated table to the post office. We specify the mail in the field under the button "Send Report".
+// ======================================================================================= //
+
 План действий:
 1. Загрузка объекта с API;
 2. Верстка макета;
