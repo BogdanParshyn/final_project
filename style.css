@@ -1,0 +1,41 @@
+body{margin:0px;}
+.form{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.head_block{
+	position: absolute;
+	background:grey;
+	width: 100%;
+	height: 10%;
+}
+
+.filter_block{
+	position:absolute;
+	background: yellow;
+	width: 25%;
+	height: 60%;
+	top: 10%;
+	overflow: auto;
+}
+.result_block{
+	position:absolute;
+	background: blue;
+	width: 25%;
+	height: 30%;
+	top: 70%;
+}
+.table_block{
+	position:absolute;
+	background: lime;
+	width: 75%;
+	height: 90%;
+	top: 10%;
+	left:25%
+}
+.build_table_btn{
+	position: absolute;
+	left: 15%;
+	top: 0%
+}

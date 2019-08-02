@@ -1,0 +1,27 @@
+{
+  "name": "report_service",
+  "version": "0.0.0",
+  "description": "Diploma project - creating a report based on the data obtained from the server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "parcel ./index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BogdanParshyn/final_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BogdanParshyn/final_project/issues"
+  },
+  "homepage": "https://github.com/BogdanParshyn/final_project#readme",
+  "dependencies": {
+    "parcel": "^1.12.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.4"
+  }
+}
