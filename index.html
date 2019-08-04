@@ -9,6 +9,12 @@
 <body>
 	<div id="root"></div>
     <script src="index.jsx"></script>
+
+    <script>
+        if('serviceWorker' in navigator){
+          navigator.serviceWorker.register('https://BogdanParshyn.github.io/final_project/service-worker.js')
+        }
+    </script>
 	
 </body>
 </html>
