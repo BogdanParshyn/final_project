@@ -1,0 +1,9 @@
+сначала сделать то что в serviceWorker.doc
+https://app-manifest.firebaseapp.com/ 
+manifest.json to manifest.webmanifest
+https://developer.mozilla.org/ru/docs/Web/%D0%9C%D0%B0%D0%BD%D0%B8%D1%84%D0%B5%D1%81%D1%82
+https://medium.com/appscope/designing-native-like-progressive-web-apps-for-ios-1b3cdda1d0e8
+после этого сделать npm run build
+после этого сделать npm run deploy
+
+Обработать Array, чтобы он выводил только один раз результат, а не столько сколько всего значений ключей.
