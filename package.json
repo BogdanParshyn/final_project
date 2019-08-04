@@ -1,5 +1,5 @@
 {
-  "name": "report_service",
+  "name": "service_report",
   "version": "0.0.0",
   "description": "Diploma project - creating a report based on the data obtained from the server.",
   "main": "index.js",
@@ -20,8 +20,6 @@
   "dependencies": {
     "parcel": "^1.12.3",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "^7.1.0",
-    "redux": "^4.0.4"
+    "react-dom": "^16.8.6"
   }
 }

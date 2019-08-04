@@ -4,7 +4,6 @@ import Head from './head';
 import Filter from './filter';
 import Result from './result';
 import Table from './table';
-import {connect, Provider} from 'react-redux';
 export default class Full_component extends React.Component{
 	constructor(){
 		super();
@@ -22,7 +21,7 @@ export default class Full_component extends React.Component{
 		this.setState({ choiceAPI: value })
 	}
 	updateBuild(value){
-		this.setState({boxes_request: value })
+		this.setState({boxes_request: [...value] })
 	}
 	render(){
 			return(
