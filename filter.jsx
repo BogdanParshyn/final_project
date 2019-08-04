@@ -83,7 +83,6 @@ export default class Filter extends React.Component{
 					this.state.boxes_request.splice(q,0,event.target.value)
 					break;
 				}
-				
 			}
 		}
 		else
