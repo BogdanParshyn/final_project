@@ -7,3 +7,5 @@ https://medium.com/appscope/designing-native-like-progressive-web-apps-for-ios-1
 после этого сделать npm run deploy
 
 Обработать Array, чтобы он выводил только один раз результат, а не столько сколько всего значений ключей.
+
+https://codepen.io/gregbarozzi/pen/XXMBLM

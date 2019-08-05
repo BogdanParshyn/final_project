@@ -8,7 +8,6 @@ export default class Table extends React.Component{
 	constructor(){
 		super();
 		this.state={
-			report_table:[],
 			data:[]
 		}
 		this.buildTable=this.buildTable.bind(this)
@@ -21,7 +20,6 @@ export default class Table extends React.Component{
 	buildTable(){
 		report_table=[];
 		this.setState({
-			report_table:[],
 			data:[]
 		});
 		fetch(this.props.choiceAPI,{method: 'GET'})
@@ -45,7 +43,6 @@ export default class Table extends React.Component{
 						}
 					});
 					console.log(report_table)
-					
 	}
 	
 	render(){
