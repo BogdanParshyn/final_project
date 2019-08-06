@@ -43,8 +43,11 @@ body{margin:0px;}
 .tableOut{
 	position:absolute;
 	background: white;
-	
+	border:1;
 	width:100%;
 	height:100%;
 	overflow: auto;
+}
+.tableVisual{
+	border: 1;
 }

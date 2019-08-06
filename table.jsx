@@ -46,23 +46,23 @@ export default class Table extends React.Component{
 						}
 						this.setState({
 							table_visible: "block",
-							final_table: report_table.map((row)=>
-								<tr>{row} </tr>
-							)
+							final_table: report_table.map((row)=><tr>
+								{row.map((cols)=>
+								<td>
+									{cols}
+								</td>)}
+							</tr>)
 						})
-						for(let i=0;i<report_table.length;i++){
-							for(let j=0;j<report_table[i].length;j++){
-								console.log(report_table[i][j]+'\n')
-							}
-						}
+						console.log(report_table.length)
 					});
 				
+					
 	}
 	render(){
 		return(
 			<div className="table_block">
 				<div className="tableOut" style={{display: this.state.table_visible}}>
-					<table>{this.state.final_table}</table>
+					<table className="tableVisual"><tbody className="tableVisual">{this.state.final_table}</tbody></table>
 				</div>
 			</div>
 		)
