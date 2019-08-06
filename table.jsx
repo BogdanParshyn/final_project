@@ -1,6 +1,6 @@
 import React from 'react';
 import "./style.css"
-const report_table=[];
+let report_table=[];
 function isObject(obj) {
 		return obj === Object(obj);
 	}
@@ -20,15 +20,16 @@ export default class Table extends React.Component{
 		}
 	}
 	buildTable(){
-		
-		this.setState({
-			data:[],
-			final_table:[]
-		});
+			this.setState({
+				data:[],
+				final_table:[]
+			});
+			report_table=[];
 		
 		fetch(this.props.choiceAPI,{method: 'GET'})
 					.then(res=>res.json())
 					.then(res=>{
+						
 						report_table.push(this.props.boxes_request)
 						for(var key in res) {
 							var value = res[key];
