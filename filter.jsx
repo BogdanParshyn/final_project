@@ -74,7 +74,13 @@ export default class Filter extends React.Component{
 							btn_visible:'block',
 						});
 					}
-			);
+				)
+				.catch(error=>{
+					this.setState({
+						checkBoxes: "Проверьте интернет соединение"
+					});
+					}
+				);
 	}
 	onChoice(){
 		if(event.target.checked==true){
