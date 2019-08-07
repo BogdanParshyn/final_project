@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/BogdanParshyn/final_project#readme",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "parcel": "^1.12.3",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.10",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {

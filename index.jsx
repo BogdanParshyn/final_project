@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Head from './head';
 import Filter from './filter';
 import Result from './result';
-import Table from './table';
+import ResultTable from './table';
 export default class Full_component extends React.Component{
 	constructor(){
 		super();
@@ -36,10 +36,10 @@ export default class Full_component extends React.Component{
 				>
 				</Filter>
 				<Result></Result>
-				<Table
+				<ResultTable
 					choiceAPI={this.state.choiceAPI}
 					boxes_request={this.state.boxes_request}
-				></Table>
+				></ResultTable>
 			</div>
 		)
 	}

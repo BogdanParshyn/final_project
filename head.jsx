@@ -1,6 +1,7 @@
 import React from 'react';
 import "./style.css";
-
+import Button from 'react-bootstrap/Button';
+import InputGroup from 'react-bootstrap/InputGroup'
 
 export default class Head extends React.Component{
 	constructor(){

@@ -1,10 +1,11 @@
 import React from 'react';
 import "./style.css"
 let report_table=[];
+import Table from 'react-bootstrap/Table';
 function isObject(obj) {
 		return obj === Object(obj);
 	}
-export default class Table extends React.Component{
+export default class ResultTable extends React.Component{
 	constructor(){
 		super();
 		this.state={
@@ -62,7 +63,7 @@ export default class Table extends React.Component{
 		return(
 			<div className="table_block">
 				<div className="tableOut" style={{display: this.state.table_visible}}>
-					<table className="tableVisual"><tbody className="tableVisual">{this.state.final_table}</tbody></table>
+					<Table striped bordered hover>{this.state.final_table}</Table>
 				</div>
 			</div>
 		)
