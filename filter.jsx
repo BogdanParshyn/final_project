@@ -1,6 +1,7 @@
 import React from 'react';
 import "./style.css"
 import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup'
 var boxes=[];
 	function isObject(obj) {
 		return obj === Object(obj);
@@ -108,8 +109,12 @@ export default class Filter extends React.Component{
 	render(){
 		return(
 			<div className="filter_block">
-				<button style={{display:this.state.btn_visible }} onClick={this.onBuildTable}>Build table</button>
-				<div onChange={this.onChoice}>{this.state.checkBoxes}</div>
+				<Button variant="light" className="btn_build" style={{display:this.state.btn_visible }} onClick={this.onBuildTable}>
+					Build table
+				</Button>
+				<div onChange={this.onChoice} className="checkGroup">
+					<ButtonGroup vertical>{this.state.checkBoxes}</ButtonGroup>
+				</div>
 			</div>
 		)
 		

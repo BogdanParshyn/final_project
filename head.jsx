@@ -1,7 +1,6 @@
 import React from 'react';
 import "./style.css";
 import Button from 'react-bootstrap/Button';
-import InputGroup from 'react-bootstrap/InputGroup'
 
 export default class Head extends React.Component{
 	constructor(){
@@ -33,14 +32,14 @@ export default class Head extends React.Component{
 	render(){
 		return(
 			<div className="head_block">
-				<select name="head_select" onChange={this.onChoiceCountry} value={this.state.choiceAPI}>
+				<select onChange={this.onChoiceCountry} value={this.state.choiceAPI}>
 					<option value="" selected disabled hidden>Выберите базу</option>
 					<option value="https://restcountries.eu/rest/v2/all">Country</option>
 					<option value="https://api.exchangeratesapi.io/latest?base=EUR">Euro course</option>
 					<option value="https://api.exchangeratesapi.io/latest?base=USD">Dollar course</option>
 					<option value="https://api.exchangeratesapi.io/latest?base=GBP">GBP course</option>
 				</select>
-				<button className="btn_head" onClick={this.onClick} disabled={this.state.btn_base}>Загрузить базу</button>
+				<Button variant="light" className="btn_head" onClick={this.onClick} disabled={this.state.btn_base}>Загрузить базу</Button>
 				
 			</div>
 			

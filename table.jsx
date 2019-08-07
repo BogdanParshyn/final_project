@@ -11,7 +11,8 @@ export default class ResultTable extends React.Component{
 		this.state={
 			data:[],
 			final_table:[],
-			table_visible:"none"
+			table_visible:"none",
+			head_table:[]
 		}
 		this.buildTable=this.buildTable.bind(this)
 	}
@@ -23,15 +24,14 @@ export default class ResultTable extends React.Component{
 	buildTable(){
 			this.setState({
 				data:[],
-				final_table:[]
+				final_table:[],
+				head_table:[]
 			});
 			report_table=[];
 		
 		fetch(this.props.choiceAPI,{method: 'GET'})
 					.then(res=>res.json())
 					.then(res=>{
-						
-						report_table.push(this.props.boxes_request)
 						for(var key in res) {
 							var value = res[key];
 							if(isObject(value)==true){
@@ -47,6 +47,7 @@ export default class ResultTable extends React.Component{
 						}
 						this.setState({
 							table_visible: "block",
+							head_table:this.props.boxes_request.map((cols)=><th>{cols}</th>),
 							final_table: report_table.map((row)=><tr>
 								{row.map((cols)=>
 								<td>
@@ -54,16 +55,20 @@ export default class ResultTable extends React.Component{
 								</td>)}
 							</tr>)
 						})
-						console.log(report_table.length)
 					});
-				
-					
 	}
 	render(){
 		return(
 			<div className="table_block">
 				<div className="tableOut" style={{display: this.state.table_visible}}>
-					<Table striped bordered hover>{this.state.final_table}</Table>
+					<Table striped bordered hover>
+						<thead style={{backgroundColor: "#D7DDE5"}}>
+							<tr>{this.state.head_table}</tr>
+						</thead>
+						<tbody>
+							{this.state.final_table}
+						</tbody>
+					</Table>
 				</div>
 			</div>
 		)
