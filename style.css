@@ -14,7 +14,7 @@ body{margin:0px;}
 .filter_block{
 	position:absolute;
 	background: #DBDCDC;
-	width: 20%;
+	width: 25%;
 	height: 60%;
 	top: 10%;
 	overflow: auto;
@@ -34,7 +34,7 @@ body{margin:0px;}
 .result_block{
 	position:absolute;
 	background: #9ACCCC;
-	width: 20%;
+	width: 25%;
 	height: 30%;
 	top: 70%;
 	box-shadow: 0 0 5px;
@@ -42,10 +42,10 @@ body{margin:0px;}
 .table_block{
 	position:absolute;
 	background-image:url(images/back_table.png);
-	width: 80%;
+	width: 75%;
 	height: 90%;
 	top: 10%;
-	left:20%;
+	left:25%;
 	box-shadow: inset 0 0 6px;
 }
 .build_table_btn{
