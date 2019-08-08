@@ -1,31 +1,23 @@
 import React from 'react';
 import "./style.css";
-import Button from 'react-bootstrap/Button';
 
 export default class Head extends React.Component{
 	constructor(){
 		super();
 		this.state={
-			choiceAPI: '',
-			btn_base: true
+			choiceAPI: ''
 		}
 		this.onChoiceCountry=this.onChoiceCountry.bind(this)
-		this.onClick=this.onClick.bind(this)
-		
 	}
 	
 	onChoiceCountry(){
 		this.setState({
 			choiceAPI: event.target.value,
-			btn_base: false
-		});
+		},()=>this.props.updateData(this.state.choiceAPI));
 		
 	}
 	onClick(){
 			this.props.updateData(this.state.choiceAPI);
-			this.setState({
-				btn_base:true
-			});
 	}
 	
 	
@@ -39,8 +31,6 @@ export default class Head extends React.Component{
 					<option value="https://api.exchangeratesapi.io/latest?base=USD">Dollar course</option>
 					<option value="https://api.exchangeratesapi.io/latest?base=GBP">GBP course</option>
 				</select>
-				<Button variant="light" className="btn_head" onClick={this.onClick} disabled={this.state.btn_base}>Загрузить базу</Button>
-				
 			</div>
 			
 		)

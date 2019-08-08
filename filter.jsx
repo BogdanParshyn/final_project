@@ -15,7 +15,7 @@ export default class Filter extends React.Component{
 			checked_true: true,
 			boxes_result:[],
 			boxes_request:[],
-			btn_visible:'none'
+			btn_visible:'none',
 		}
 		this.onChoice=this.onChoice.bind(this)
 		this.onBuild=this.onBuild.bind(this)
@@ -25,7 +25,7 @@ export default class Filter extends React.Component{
 	componentDidUpdate(prevProps){
 		if(prevProps.choiceAPI!==this.props.choiceAPI)
 		{	
-			this.onBuild()
+			this.onBuild();
 		}
 	}
 	onBuild(){
@@ -59,17 +59,15 @@ export default class Filter extends React.Component{
 						}
 						this.setState({
 							boxes_result:boxes.split(',',k),
-							boxes_request:boxes.split(',',k)
 						});
 						this.setState({
 							checkBoxes:[],
-							
 							btn_visible:'none'
 						});
 						this.setState({
 							checkBoxes:this.state.boxes_result.map((box_result)=>
 								<li style={{listStyleType: "none"}} key={box_result}>
-									<input defaultChecked={true} type="checkbox" value={box_result}/>
+									<input defaultChecked={false} type="checkbox" value={box_result}/>
 									{box_result}
 								</li>
 							),
@@ -112,8 +110,11 @@ export default class Filter extends React.Component{
 				<Button variant="light" className="btn_build" style={{display:this.state.btn_visible }} onClick={this.onBuildTable}>
 					Build table
 				</Button>
-				<div onChange={this.onChoice} className="checkGroup">
-					<ButtonGroup vertical>{this.state.checkBoxes}</ButtonGroup>
+				<div onChange={this.onChoice} className="checkGroup" style={{display:this.state.div_visible }}>
+				
+					<ButtonGroup vertical>
+						{this.state.checkBoxes}
+					</ButtonGroup>
 				</div>
 			</div>
 		)
