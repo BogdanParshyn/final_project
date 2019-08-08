@@ -35,7 +35,10 @@ export default class Full_component extends React.Component{
 					updateBuild={this.updateBuild}
 				>
 				</Filter>
-				<Result></Result>
+				<Result
+					boxes_request={this.state.boxes_request}
+				>
+				</Result>
 				<ResultTable
 					choiceAPI={this.state.choiceAPI}
 					boxes_request={this.state.boxes_request}

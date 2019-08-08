@@ -7,7 +7,7 @@ export default class Result extends React.Component{
 		this.onCreateTable=this.onCreateTable.bind(this)
 	}
 	onCreateTable(){
-		const data = [[1, 2, 3], [true, false, null, 'sheetjs'], ['foo', 'bar', new Date('2014-02-19T14:30Z'), '0.3'], ['baz', null, 'qux']];
+		const data = [this.props.boxes_request];
 				var buffer = xlsx.build([{name: "mySheetName", data: data}]);
 		console.log(buffer)
 	}
