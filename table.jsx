@@ -2,6 +2,7 @@ import React from 'react';
 import "./style.css"
 let report_table=[];
 import Table from 'react-bootstrap/Table';
+import ReactHTMLTableToExcel from 'react-html-table-to-excel';
 function isObject(obj) {
 		return obj === Object(obj);
 	}
@@ -60,8 +61,15 @@ export default class ResultTable extends React.Component{
 	render(){
 		return(
 			<div className="table_block">
+			<ReactHTMLTableToExcel
+                    id="test-table-xls-button"
+                    className="download-table-xls-button"
+                    table="table-to-xls"
+                    filename="tablexls"
+                    sheet="tablexls"
+                    buttonText="Download as XLS"/>
 				<div className="tableOut" style={{display: this.state.table_visible}}>
-					<Table striped bordered hover>
+					<Table striped bordered hover id="table-to-xls">
 						<thead style={{backgroundColor: "#D7DDE5"}}>
 							<tr>{this.state.head_table}</tr>
 						</thead>
@@ -70,6 +78,7 @@ export default class ResultTable extends React.Component{
 						</tbody>
 					</Table>
 				</div>
+				
 			</div>
 		)
 	}

@@ -57,8 +57,9 @@ body{margin:0px;}
 .tableOut{
 	position:absolute;
 	background: white;
+	top:20%;
 	width:100%;
-	height:100%;
+	height:80%;
 	overflow: auto;
 	box-shadow: inset 0 0 6px;
 }
