@@ -72,7 +72,7 @@ export default class ResultTable extends React.Component{
 		return(
 			<div className="table_block">
 				<div className="preloader" style={{display: this.state.preloader_visible}}>
-					<img src={Preloader}></img>
+					<img src={Preloader} style={{width:"100%"}}></img>
 				</div>
 				<div className="tableOut" style={{display: this.state.table_visible}}>
 					<Table striped bordered hover id="table-to-xls">
