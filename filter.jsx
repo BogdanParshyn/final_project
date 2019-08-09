@@ -59,6 +59,7 @@ export default class Filter extends React.Component{
 						}
 						this.setState({
 							boxes_result:boxes.split(',',k),
+							boxes_request:boxes.split(',',k),
 						});
 						this.setState({
 							checkBoxes:[],
@@ -67,7 +68,7 @@ export default class Filter extends React.Component{
 						this.setState({
 							checkBoxes:this.state.boxes_result.map((box_result)=>
 								<li style={{listStyleType: "none"}} key={box_result}>
-									<input defaultChecked={false} type="checkbox" value={box_result}/>
+									<input defaultChecked={true} type="checkbox" value={box_result}/>
 									{box_result}
 								</li>
 							),
