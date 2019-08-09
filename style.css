@@ -70,3 +70,14 @@ body{margin:0px;}
 	box-shadow: inset 0 0 6px;
 	z-index:5;
 }
+.Select_div{
+	position:absolute;
+	margin-left: 2%;
+	margin-top: 1%;
+}
+.Instruction{
+	position:absolute;
+	margin-left: 15%;
+	margin-top: 0.5%;
+}
+

@@ -1,5 +1,11 @@
 import React from 'react';
 import "./style.css";
+import Button from 'react-bootstrap/Button';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
+
+import Tooltip from 'react-bootstrap/Tooltip'
+import ButtonToolbar from 'react-bootstrap/ButtonToolbar'
+
 
 export default class Head extends React.Component{
 	constructor(){
@@ -24,13 +30,35 @@ export default class Head extends React.Component{
 	render(){
 		return(
 			<div className="head_block">
-				<select onChange={this.onChoiceCountry} value={this.state.choiceAPI}>
-					<option value="" selected disabled hidden>Выберите базу</option>
-					<option value="https://restcountries.eu/rest/v2/all">Country</option>
-					<option value="https://api.exchangeratesapi.io/latest?base=EUR">Euro course</option>
-					<option value="https://api.exchangeratesapi.io/latest?base=USD">Dollar course</option>
-					<option value="https://api.exchangeratesapi.io/latest?base=GBP">GBP course</option>
-				</select>
+				<div className="Select_div">
+					<select onChange={this.onChoiceCountry} value={this.state.choiceAPI}>
+						<option value="" selected disabled hidden>Выберите базу</option>
+						<option value="https://restcountries.eu/rest/v2/all">Country</option>
+						<option value="https://api.exchangeratesapi.io/latest?base=EUR">Euro course</option>
+						<option value="https://api.exchangeratesapi.io/latest?base=USD">Dollar course</option>
+						<option value="https://api.exchangeratesapi.io/latest?base=GBP">GBP course</option>
+					</select>
+				</div>
+				<div className="Instruction">
+					<ButtonToolbar>
+					{['Инструкция'].map(placement => (
+						<OverlayTrigger
+						key={placement}
+						placement={placement}
+						overlay={
+							<Tooltip id={`tooltip-${placement}`}>
+								1.qwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww<br></br>
+								1.wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww<br></br>
+		 
+							</Tooltip>
+						}
+						>
+						<Button variant="secondary">Инструкция</Button>
+						</OverlayTrigger>
+					))}
+					</ButtonToolbar>
+    
+				</div>
 			</div>
 			
 		)
