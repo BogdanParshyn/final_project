@@ -31,7 +31,7 @@ export default class Head extends React.Component{
 		return(
 			<div className="head_block">
 				<div className="Select_div">
-					<select onChange={this.onChoiceCountry} value={this.state.choiceAPI}>
+					<select className="selects" onChange={this.onChoiceCountry} value={this.state.choiceAPI}>
 						<option value="" selected disabled hidden>Выберите базу</option>
 						<option value="https://restcountries.eu/rest/v2/all">Country</option>
 						<option value="https://api.exchangeratesapi.io/latest?base=EUR">Euro course</option>
@@ -57,7 +57,6 @@ export default class Head extends React.Component{
 						</OverlayTrigger>
 					))}
 					</ButtonToolbar>
-    
 				</div>
 			</div>
 			

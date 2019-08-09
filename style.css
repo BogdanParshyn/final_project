@@ -72,12 +72,18 @@ body{margin:0px;}
 }
 .Select_div{
 	position:absolute;
-	margin-left: 2%;
+	margin-left: 10px;
 	margin-top: 1%;
 }
 .Instruction{
 	position:absolute;
-	margin-left: 15%;
-	margin-top: 0.5%;
+	left: 200px;
+	margin-top: 1%;
 }
-
+.selects{
+   display: inline-block;
+  width: 160px;
+  height: 34px;
+  line-height: 30px;
+  position: relative;
+}
