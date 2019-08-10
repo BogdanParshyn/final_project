@@ -50,7 +50,7 @@ body{margin:0px;}
 .table_block{
 	position:absolute;
 	background-image:url(images/back_table.jpg);
-	background-repeat:round;
+	background-repeat:no-repeat;
 	opacity: 0.8;
 	width: 75%;
 	height: 90%;
