@@ -54,7 +54,7 @@ export default class Head extends React.Component{
 							</Tooltip>
 						}
 						>
-						<Button variant="light">Инструкция</Button>
+						<button className="bot8">Инструкция</button>
 						</OverlayTrigger>
 					))}
 					</ButtonToolbar>

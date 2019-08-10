@@ -32,7 +32,8 @@ export default class ResultTable extends React.Component{
 			});
 			report_table=[];
 						this.setState({
-							preloader_visible:'block'
+							preloader_visible:'block',
+							table_visible: "none"
 						})
 		fetch(this.props.choiceAPI,{method: 'GET'})
 					.then(res=>res.json())
