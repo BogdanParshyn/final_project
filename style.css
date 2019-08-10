@@ -118,7 +118,7 @@ body{margin:0px;}
 
 .btn_save{
 	margin-top:7%;
-	margin-left: 15%
+
 }
 input[type=checkbox].css-checkbox {
 							position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
@@ -195,6 +195,8 @@ input[type=checkbox].css-checkbox {
     padding: 4px 6px;
     vertical-align: middle;
         text-decoration:none;
+	margin-left:auto;
+	margin-right:auto;
 }
 .bot9:hover, .bot9:focus {
    border-color: rgba(82, 168, 236, 0.8);
