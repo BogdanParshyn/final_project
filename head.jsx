@@ -47,9 +47,10 @@ export default class Head extends React.Component{
 						placement={placement}
 						overlay={
 							<Tooltip id={`tooltip-${placement}`}>
-								1.qwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww<br></br>
-								1.wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww<br></br>
-		 
+								1.Для старта работы изначально нужно выбрать базу из выпадающего списка.<br></br>
+								2.Вторым шагом является выбор столбцов.<br></br>
+								3.Кнопка «Build table» формирование таблицы для предварительного просмотра перед скачиванием.<br></br>
+								4.Кнопка «Download as XLS» - сохранение таблицы в формате .xls.
 							</Tooltip>
 						}
 						>
