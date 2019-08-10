@@ -16,6 +16,7 @@ export default class Filter extends React.Component{
 			boxes_result:[],
 			boxes_request:[],
 			btn_visible:'none',
+			text_visible:'block'
 		}
 		this.onChoice=this.onChoice.bind(this)
 		this.onBuild=this.onBuild.bind(this)
@@ -63,7 +64,8 @@ export default class Filter extends React.Component{
 						});
 						this.setState({
 							checkBoxes:[],
-							btn_visible:'none'
+							btn_visible:'none',
+							text_visible:'none'
 						});
 						this.setState({
 							checkBoxes:this.state.boxes_result.map((box_result)=>
@@ -108,6 +110,7 @@ export default class Filter extends React.Component{
 	render(){
 		return(
 			<div className="filter_block">
+			<div className="first_text" style={{display:this.state.text_visible}}>Для начала работы выберите базу.</div>
 				<Button variant="light" className="btn_build" style={{display:this.state.btn_visible }} onClick={this.onBuildTable}>
 					Build table
 				</Button>

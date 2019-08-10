@@ -7,13 +7,15 @@ export default class Result extends React.Component{
 	render(){
 		return(
 			<div className="result_block">
+				<div className="btn_save">
 				<ReactHTMLTableToExcel
                     id="test-table-xls-button"
-                    className="download_table"
+                    className="bot8"
                     table="table-to-xls"
                     filename="report"
                     sheet="table"
                     buttonText="Download"/>
+				</div>
 			</div>
 		)
 	}

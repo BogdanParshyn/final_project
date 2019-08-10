@@ -17,6 +17,7 @@ export default class ResultTable extends React.Component{
 			preloader_visible:'none'
 		}
 		this.buildTable=this.buildTable.bind(this)
+		//this.Search=this.Search.bind(this)
 	}
 	componentDidUpdate(prevProps){
 		if(prevProps.boxes_request!==this.props.boxes_request){
@@ -65,15 +66,39 @@ export default class ResultTable extends React.Component{
 						this.setState({
 							preloader_visible:'none'
 						})
-					});
-					
-					
+					});			
 	}
+	
+	Search(){
+		 var phrase = document.getElementById('search-text');
+    var table = document.getElementById('table-to-xls');
+    var regPhrase = new RegExp(phrase.value, 'i');
+    var flag = false;
+    for (var i = 1; i < table.rows.length; i++) {
+        flag = false;
+        for (var j = table.rows[i].cells.length - 1; j >= 0; j--) {
+            flag = regPhrase.test(table.rows[i].cells[j].innerHTML);
+            if (flag) break;
+        }
+        if (flag) {
+            table.rows[i].style.display = "";
+        } else {
+            table.rows[i].style.display = "none";
+        }
+
+    }
+		
+		
+	}
+	
 	render(){
 		return(
 			<div className="table_block">
 				<div className="preloader" style={{display: this.state.preloader_visible}}>
 					<img src={Preloader} style={{marginLeft:"22%",marginTop:"8%", width:"50%", height:"67%"}}></img>
+				</div>
+				<div className="search_div" style={{display: this.state.table_visible}}>
+					<input id="search-text" onKeyUp={this.Search} type="text" className="search_input" placeholder="   Поиск по таблице"></input>
 				</div>
 				<div className="tableOut" style={{display: this.state.table_visible}}>
 					<Table striped bordered hover id="table-to-xls">
