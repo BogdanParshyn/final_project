@@ -20,3 +20,4 @@ export default class Result extends React.Component{
 		)
 	}
 }
+
