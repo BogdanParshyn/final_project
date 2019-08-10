@@ -117,8 +117,8 @@ body{margin:0px;}
   position: relative;
 }
 .btn_save{
-	margin-top:3%;
-	margin-left: 30%
+	margin-top:7%;
+	margin-left: 20%
 }
 input[type=checkbox].css-checkbox {
 							position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
@@ -186,8 +186,8 @@ input[type=checkbox].css-checkbox {
         border-radius: 4px;
     color: #555555;
     display:block;
-        width:40%;
-    font-size: 100%;
+        width:120px;
+    font-size: 14px;
         text-align:center;
     height: 40%;
     line-height: 20px;
