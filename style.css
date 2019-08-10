@@ -203,28 +203,3 @@ input[type=checkbox].css-checkbox {
 }
 
 
-@media (max-width: 100px){
-	.head_block{
-		display:none;
-	position: absolute;
-	background:#FFFFF0;
-	width: 100%;
-	height: 10%;
-	box-shadow: inset 0 0 2px;
-	z-index:1;
-	}
-
-	.table_block{
-	display:none;
-	position:absolute;
-	background-image:url(images/back_table.jpg);
-	background-size:cover;
-	opacity: 0.8;
-	width: 75%;
-	height: 90%;
-	top: 10%;
-	left:25%;
-	box-shadow: inset 0 0 2px;
-	
-	}	
-}
