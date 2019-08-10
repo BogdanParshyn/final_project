@@ -118,3 +118,9 @@ input[type=checkbox].css-checkbox {
 				-ms-user-select: none;
 				user-select: none;
 			}
+			
+.download_table{
+	margin-top:5%;
+	margin-left: 10%
+	
+}
