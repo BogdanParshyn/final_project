@@ -68,8 +68,8 @@ export default class Filter extends React.Component{
 						this.setState({
 							checkBoxes:this.state.boxes_result.map((box_result)=>
 								<li style={{listStyleType: "none"}} key={box_result}>
-									<input defaultChecked={true} type="checkbox" value={box_result}/>
-									{box_result}
+									<input id={box_result} defaultChecked={true} type="checkbox" value={box_result} className="css-checkbox"/>
+									<label for={box_result} className="css-label">{box_result}</label>
 								</li>
 							),
 							btn_visible:'block',
