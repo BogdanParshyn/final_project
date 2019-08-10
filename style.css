@@ -10,13 +10,14 @@ body{margin:0px;}
 	width: 100%;
 	height: 10%;
 	box-shadow: inset 0 0 2px;
+	z-index:1;
 }
 
 .filter_block{
 	position:absolute;
 	background: #E7F0F7;
 	width: 25%;
-	height: 80%;
+	height: 75%;
 	top: 10%;
 	overflow: auto;
 	box-shadow: inset 0 0 1px;
@@ -43,8 +44,8 @@ body{margin:0px;}
 	position:absolute;
 	background: #FFFFF0;
 	width: 25%;
-	height: 9.5%;
-	top: 90%;
+	height: 15%;
+	top: 85%;
 	box-shadow: inset 0 0 0px;
 }
 .table_block{
@@ -57,6 +58,7 @@ body{margin:0px;}
 	top: 10%;
 	left:25%;
 	box-shadow: inset 0 0 2px;
+	z-index:2;
 }
 .build_table_btn{
 	position: absolute;
@@ -72,7 +74,7 @@ body{margin:0px;}
 	top:10%;
 	overflow: auto;
 	box-shadow: inset 0 0 2px;
-	z-index:5;
+	z-index:3;
 }
 .search_div{
 	position:absolute;
@@ -80,6 +82,7 @@ body{margin:0px;}
 	width:100%;
 	height:10%;
 	box-shadow: inset 0 0 2px;
+	z-index:4;
 }
 .search_input{
 	width:100%;
@@ -168,6 +171,32 @@ input[type=checkbox].css-checkbox {
         text-decoration:none;
 }
 .bot8:hover, .bot8:focus {
+   border-color: rgba(82, 168, 236, 0.8);
+   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+   outline: 0 none;
+}
+
+
+.bot9 {
+	
+  background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+        border-radius: 4px;
+    color: #555555;
+    display:block;
+        width:40%;
+    font-size: 14px;
+        text-align:center;
+    height: 40%;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+    vertical-align: middle;
+        text-decoration:none;
+}
+.bot9:hover, .bot9:focus {
    border-color: rgba(82, 168, 236, 0.8);
    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
    outline: 0 none;

@@ -10,7 +10,7 @@ export default class Result extends React.Component{
 				<div className="btn_save">
 				<ReactHTMLTableToExcel
                     id="test-table-xls-button"
-                    className="bot8"
+                    className="bot9"
                     table="table-to-xls"
                     filename="report"
                     sheet="table"
