@@ -83,6 +83,29 @@ body{margin:0px;}
 }
 .btn_instruction{
 	height:70%;
+	background: #e9f0f5;
+  background-image: -webkit-linear-gradient(top, #e9f0f5, #f2f8fc);
+  background-image: -moz-linear-gradient(top, #e9f0f5, #f2f8fc);
+  background-image: -ms-linear-gradient(top, #e9f0f5, #f2f8fc);
+  background-image: -o-linear-gradient(top, #e9f0f5, #f2f8fc);
+  background-image: linear-gradient(to bottom, #e9f0f5, #f2f8fc);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #140114;
+  font-size: 20px;
+  padding: 1% 20px 1% 20px;
+  text-decoration: none;
+}
+.btn_instruction:hover{
+	background: #d1dee6;
+  background-image: -webkit-linear-gradient(top, #d1dee6, #d3e4f0);
+  background-image: -moz-linear-gradient(top, #d1dee6, #d3e4f0);
+  background-image: -ms-linear-gradient(top, #d1dee6, #d3e4f0);
+  background-image: -o-linear-gradient(top, #d1dee6, #d3e4f0);
+  background-image: linear-gradient(to bottom, #d1dee6, #d3e4f0);
+  text-decoration: none;
 }
 .selects{
    display: inline-block;
