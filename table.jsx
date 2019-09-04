@@ -25,6 +25,7 @@ export default class ResultTable extends React.Component{
 		}
 	}
 	buildTable(){
+		var regex = /(http|https):\/\/(\w+:{0,1}\w*)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/;
 			this.setState({
 				data:[],
 				final_table:[],

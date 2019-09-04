@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BogdanParshyn/final_project.git"
+    "url": "git+https://github.com/MihailPasjuta/service_report.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BogdanParshyn/final_project/issues"
+    "url": "https://github.com/MihailPasjuta/service_report/issues"
   },
-  "homepage": "https://github.com/BogdanParshyn/final_project#readme",
+  "homepage": "https://github.com/MihailPasjuta/service_report#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "images": "^3.0.2",

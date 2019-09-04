@@ -1,7 +1,7 @@
 import React from 'react';
 import "./style.css"
 import ReactHTMLTableToExcel from 'react-html-table-to-excel';
-var today = new Date();
+
 export default class Result extends React.Component{
 	
 	render(){
@@ -12,7 +12,7 @@ export default class Result extends React.Component{
                     id="test-table-xls-button"
                     className="bot9"
                     table="table-to-xls"
-                    filename="report"
+					filename="result"
                     sheet="table"
                     buttonText="Download"/>
 				</div>
